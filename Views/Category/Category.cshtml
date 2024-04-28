@@ -1,0 +1,12 @@
+@model CategoryModel
+@{
+    ViewData["Title"] = "Category";
+}
+@using(Html.BeginForm("CategoryPost","Category",FormMethod.Post))
+{
+    <p>Id:</p>
+    @Html.TextBoxFor(m => m.Id)
+    <p>Nome:</p>
+    @Html.TextBoxFor(m => m.Nome)
+    <input type="submit" value="Submit">
+}
